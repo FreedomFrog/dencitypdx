@@ -1,0 +1,218 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DenCity PDX</title>
+    <link rel="shortcut icon" href="{% static 'll_app/img/favi.ico' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'll_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'll_app/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'll_app/vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'll_app/css/landing-page.min.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="{% static 'll_app/img/icon-garbage-small.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+    DenCity PDX
+  </a>
+</nav>
+
+    <!-- Masthead -->
+    <header class="masthead text-light text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="md-5 text-center">It's blockchain, bitches!</h1>
+                   <a id="btnClear" class="btn btn-success btn-md center-block" role="button" Style="width: 200px;" href="{% url 'register_view' %}">Register</a>
+                   <a id="btnClear" class="btn btn-success btn-md center-block" role="button" Style="width: 200px;" href="{% url 'login' %}">Login</a>
+               </div>
+          </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-people m-auto text-success"></i>
+              </div>
+              <h3 id="about">Mutually Beneficial</h3>
+              <p class="lead mb-0">Enables property owners, developers, and the community to prosper.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-cursor m-auto text-success"></i>
+              </div>
+              <h3>Easy to Use</h3>
+              <p class="lead mb-0">Efficiently connects property holders with developers.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-lock m-auto text-success"></i>
+              </div>
+              <h3>Safe &amp; Secure</h3>
+              <p class="lead mb-0">The safest way to sell Density Transfer Credits and rent Additional Dwelling Units.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static "ll_app/img/bg-showcase-1.jpg" %}');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Mutually Beneficial</h2>
+            <p class="lead mb-0">DenCity allows property owners to profit from undeveloped land while giving developers the ability maintain historic landmarks, affordable housing, and green spaces. DenCity also helps homeowners with Additional Dwelling Units to provide affordable housing to the members of their community. </p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('{% static "ll_app/img/bg-showcase-2.jpg" %}');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Easy to Use</h2>
+            <p class="lead mb-0">DenCity connects property owners with developers quickly and efficiently to facilitate the trading of Density Transfer Credits. DenCity makes it easy for homeowners to rent their Additional Dwelling Units by connecting them with potential renters.</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static "ll_app/img/bg-showcase-3.jpg" %}');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Safe &amp; Secure</h2>
+            <p class="lead mb-0">Access to DenCity Credit Trading is restricted to verified contractors and property owners to ensure security. DenCity's ADU rental service provides comprehensive background checks and ensures homeowner safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">Our Partners:</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="{% static 'll_app/img/testimonials-1.jpg' %}" alt="">
+              <h5>Portland  Bureau of Development Services</h5>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src=" {% static 'll_app/img/testimonials-2.jpg' %}" alt="">
+              <h5>Oregon Construction Contractors Board</h5>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src=" {% static 'll_app/img/testimonials-3.jpg'%}" alt="">
+              <h5>Technology Association of Oregon</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Map -->
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-3">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#" class="text-success">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-success">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-success">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-success">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; DenCity 2018. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw text-success"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-twitter-square fa-2x fa-fw text-success"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram fa-2x fa-fw text-success"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'll_app/vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'll_app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>
